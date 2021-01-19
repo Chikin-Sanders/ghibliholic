@@ -1,14 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Navbar() {
+    function refreshPage() {
+        window.location.href='/'
+    }
     return (
-        <nav className="nav-wrapper orange darken-3">
+        <nav className="nav-wrapper orange accent-4">
             <div className="container">
                 <a href="/" className="brand-logo">Ghibliholic</a>
                 <ul className="right">
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/movies'>Movies</Link></li>
+                    <li><NavLink to='/' onClick={() => {refreshPage()}} >Home</NavLink></li>
+                    <li><NavLink to='/movies'>Movies</NavLink></li>
                 </ul>
             </div>
         </nav>
