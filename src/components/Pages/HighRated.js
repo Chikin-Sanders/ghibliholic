@@ -29,13 +29,17 @@ export class HighRated extends Component {
                                 <div className="card small">
                                     <div className="card-content">
                                         <div className="row">
-                                        <span className="card-title">
+                                        <span className="card-title grey-text text-darken-3">
                                             <h6 className="col s6" style={{fontWeight: 'bold'}}>{film.title}</h6>
-                                            <span className="col s6">{film.rt_score}</span>
+                                            <span className="col s6">
+                                                <i class="material-icons yellow-text text-darken-2">star</i>
+                                                {' '}
+                                                {film.rt_score}
+                                            </span>
                                         </span>
                                         </div>
                                         <hr/>
-                                       <div className="row left-align" style={{overflow: 'auto'}}>
+                                       <div className="row left-align grey-text text-darken-2" style={{overflow: 'auto'}}>
                                         <p>{film.description}</p>
                                         </div>
                                     </div>
