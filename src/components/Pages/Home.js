@@ -1,9 +1,13 @@
 import React from 'react'
+import Carousel from '../layouts/Carousel'
 
 function Home() {
     return (
-        <div className='container'>
-            <h1>This is home</h1>
+        <div>
+            <Carousel />
+            <div className="container">
+                <h1>This is home</h1>
+            </div>
         </div>
     )
 }
