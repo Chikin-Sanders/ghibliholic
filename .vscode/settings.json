@@ -1,0 +1,5 @@
+{
+    "kite.enableSnippets": false,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true
+}
