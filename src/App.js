@@ -9,7 +9,7 @@ export class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className="App" style={{ backgroundColor: '#fbfdf2'}}>
           <Navbar />
           <Route path="/" exact component={Home} />
           <Route path="/movies" exact component={MoviesList} />
