@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import CardImages from '../element/CardImages'
 
 export class HighRated extends Component {
     state = {
@@ -23,7 +24,8 @@ export class HighRated extends Component {
                     <div className="col s12 m4" key={film.id}>
                         <div className="card small">
                             <div className="card-content">
-                                <div className="row">
+                            <CardImages title={film.title} rating={film.rt_score} />
+                                {/* <div className="row">
                                     <span className="card-title grey-text text-darken-3">
                                         <h6 className="col s6" style={{ fontWeight: 'bold' }}>{film.title}</h6>
                                         <span className="col s6">
@@ -32,7 +34,7 @@ export class HighRated extends Component {
                                             {film.rt_score}
                                         </span>
                                     </span>
-                                </div>
+                                </div> */}
                                 <hr />
                                 <div className="row left-align grey-text text-darken-2" style={{ overflow: 'auto' }}>
                                     <p>{film.description}</p>
