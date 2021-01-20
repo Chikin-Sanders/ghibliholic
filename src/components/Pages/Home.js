@@ -15,11 +15,12 @@ function Home() {
                 </div>
             </div>
             <hr className="container" style={{ border: '1px solid grey', borderRadius: 5 }} />
-            <div className="center" style={{margin: '50px 0'}}>
+            <div className="center" style={{margin: '30px 0', padding: 30}}>
                 <img src={totoro} alt="totoro" height="400"/>
-                <h4 className="grey-text text-darken-4">Find out other great movies</h4>
-                <Link to='/movies' className="waves-effect waves-light btn-large orange accent-4 grey-text text-darken-3">
-                    <h5 className="white-text">SEE ALL</h5>
+                <br/>
+                <br/>
+                <Link to='/movies' className="hoverable waves-effect waves-light btn-large orange accent-4 grey-text text-darken-3">
+                    <h5 className="white-text">Find out other great movies</h5>
                 </Link>
             </div>
             <hr className="container" style={{ border: '1px solid grey', borderRadius: 5 }} />
