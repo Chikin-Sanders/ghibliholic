@@ -13,7 +13,7 @@ export class Carousel extends Component {
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.slider');
             var instances = M.Slider.init(elems, {
-                height: 620,
+                height: 690,
                 interval: 3000,
                 indicators: false
             });
