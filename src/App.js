@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Navbar from './components/layouts/Navbar'
-import Home from './components/Pages/Home'
-import MoviesList from './components/Pages/MoviesList'
+import Home from './components/pages/Home'
+import MoviesList from './components/pages/MoviesList'
 
 export class App extends Component {
   render() {
