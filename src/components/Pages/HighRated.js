@@ -23,7 +23,7 @@ export class HighRated extends Component {
             bestFilmsList.map(film => {
                 return (
                     <div className="col s6" key={film.id} >
-                        <div className="card large">
+                        <div className="card large red lighten-5">
                             <div className="card-content">
                                 <div className="row">
                                     <div className="col s6">
@@ -53,7 +53,7 @@ export class HighRated extends Component {
         )
         return (
             <div>
-                <h4 style={{ margin: '25px 0px 50px' }}>Highly Rated movies</h4>
+                <h4 style={{ margin: '25px 0px 50px' }} className="grey-text text-darken-4">HIGHLY RATED MOVIED</h4>
                <div className="row">
                {bestFilms}
                </div>
