@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import CardImages from '../element/CardImages'
+import CardDetails from '../element/CardDetails'
 
 export class HighRated extends Component {
     state = {
@@ -21,23 +22,16 @@ export class HighRated extends Component {
         const bestFilms = bestFilmsList.length ? (
             bestFilmsList.map(film => {
                 return (
-                    <div className="col s12 m4" key={film.id}>
-                        <div className="card small">
+                    <div className="col s6" key={film.id} >
+                        <div className="card large">
                             <div className="card-content">
-                            <CardImages title={film.title} rating={film.rt_score} />
-                                {/* <div className="row">
-                                    <span className="card-title grey-text text-darken-3">
-                                        <h6 className="col s6" style={{ fontWeight: 'bold' }}>{film.title}</h6>
-                                        <span className="col s6">
-                                            <i class="material-icons yellow-text text-darken-2">star</i>
-                                            {' '}
-                                            {film.rt_score}
-                                        </span>
-                                    </span>
-                                </div> */}
-                                <hr />
-                                <div className="row left-align grey-text text-darken-2" style={{ overflow: 'auto' }}>
-                                    <p>{film.description}</p>
+                                <div className="row">
+                                    <div className="col s6">
+                                    <CardImages filmDetails={film}/>
+                                    </div>
+                                    <div className="col s6">
+                                    <CardDetails filmDetails={film} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +53,7 @@ export class HighRated extends Component {
         )
         return (
             <div>
-                <h4 style={{ margin: '30px 0px' }}>Highly Rated movies</h4>
+                <h4 style={{ margin: '25px 0px 50px' }}>Highly Rated movies</h4>
                <div className="row">
                {bestFilms}
                </div>
