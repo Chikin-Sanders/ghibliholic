@@ -9,7 +9,7 @@ function Home() {
             <Carousel />
             <div className="row" style={{marginTop: 50}}>
                 <hr className="container" style={{ border: '1px solid grey', borderRadius: 5}} />
-                <div className="col s12 center">
+                <div className="col s12 center" style={{ padding: 30 }}>
                     <HighRated />
                 </div>
             </div>
