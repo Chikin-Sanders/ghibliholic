@@ -22,9 +22,9 @@ function Home() {
     return (
         <div className="grey-text text-darken-4">
             <Carousel />
-            <hr className="container" style={{ border: '1px solid grey', borderRadius: 5, marginTop: 50 }} />
-            <div className="row">
-                <div className="col s12 center" style={{ padding: 30 }}>
+            <hr className="container" style={{border:'1px solid grey', borderRadius: 5, marginTop: 50 }}/>
+            <div className="container center">
+                <div className="row">
                     <HighRated />
                 </div>
             </div>
@@ -45,8 +45,8 @@ function Home() {
                             Find out more
                         </Link>
                     </div>
-                    <div className="col s6">
-                    <img src={Totoro} alt="totoro" height="210"/>
+                    <div className="col s6" >
+                        <img src={Totoro} alt="totoro" height="250"/>
                     </div>
                 </div>
             </div>
@@ -54,10 +54,10 @@ function Home() {
             <div className="center" style={divStyles}>
                 <div className="row container">
                     <div className="col s6">
-                        <img src={RadishSpirit} alt="radish-spirit" height='210'/>
+                        <img src={RadishSpirit} alt="radish-spirit" height='250'/>
                     </div>
-                    <div className="col s6">
-                        <div className="row">
+                    <div className="col s6" >
+                        <div className="row" style={{ overflow: 'hidden' }}>
                             <h4 className="col s12 left-align orange-text">About the page</h4>
                         </div>
                         <h6 style={textStyles}>
