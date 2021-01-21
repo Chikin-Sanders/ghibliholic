@@ -1,24 +1,32 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react'
 
-function Footer() {
-    return (
-        <div className="center row orange accent-4 grey-text text-darken-4" style={{padding: '30px 0', marginTop: 120}}>
-            <div className="container">
-                <div className="col s6 left-align">
-                    <h5>Powered by:</h5>
-                    <br/>
-                    <a href='https://www.themoviedb.org/' target="_blank" rel="noreferrer noopener">
-                        <h6 style={{ textDecoration: 'none' }}>The Movie Database</h6>
-                    </a>
-                    <a href='https://materializecss.com/' target="_blank" rel="noreferrer noopener">MaterializeCSS</a>
-                </div>
-                <div className="col s6 left-align">
-
-                </div>
+class Footer extends Component {
+    state = {
+        resources: [
+            { web: 'MaterializeCSS', src: 'https://materializecss.com/'},
+            { web: 'Ghibli API', src: 'https://ghibliapi.herokuapp.com/'},
+            { web: 'The Movie Database', src: 'https://www.themoviedb.org/'},
+        ]
+    }
+    render() {
+        const linkStyles = 'grey-text text-darken-4'
+        return (
+        <div className="center row blue-grey lighten-3 grey-text text-darken-4" style={{padding: '30px 0', marginTop: 100, marginBottom: 0}}>
+            <div className="container left-align">
+                <h4>Resources:</h4>
+                <br/>
+                {
+                    this.state.resources.map(resource => {
+                        return(
+                            <a href={resource.src} target="_blank" rel="noreferrer noopener" className={linkStyles}>
+                                <h6>{resource.web}</h6>
+                            </a>
+                        )
+                    })
+                }
             </div>
         </div>
-    )
+        )
+    }
 }
-
 export default Footer
