@@ -23,7 +23,7 @@ export class HighRated extends Component {
             bestFilmsList.map(film => {
                 return (
                     <div className="col l6 s12" key={film.id} >
-                        <div className="card large blue-grey lighten-5" style={{ borderRadius: '3%', padding: 0 }}>
+                        <div className="card large blue-grey lighten-4" style={{ borderRadius: '3%', padding: 0 }}>
                             <div className="card-content">
                                 <div className="row">
                                     <div className="col s6">
