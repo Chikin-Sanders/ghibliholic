@@ -6,6 +6,7 @@ class Footer extends Component {
             { web: 'MaterializeCSS', src: 'https://materializecss.com/'},
             { web: 'Ghibli API', src: 'https://ghibliapi.herokuapp.com/'},
             { web: 'The Movie Database', src: 'https://www.themoviedb.org/'},
+            { web: 'React.js', src: 'https://reactjs.org/'},
         ]
     }
     render() {
