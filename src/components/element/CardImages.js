@@ -20,7 +20,10 @@ export class CardImages extends Component {
         return [newTitle.join(''), year]
     }
     componentDidMount() {
-        axios.get(`https://api.themoviedb.org/3/search/movie?api_key=a71c653291a8f11727eb5d8df0043e5b&language=en-US&query=${this.spaceToPlus()[0]}&page=1&include_adult=false&primary_release_year=${this.spaceToPlus()[1]}`)
+        const BASE_URL = 'https://api.themoviedb.org/3/search/movie?api_key=a71c653291a8f11727eb5d8df0043e5b&language=en-US&query='
+        const YEAR_QUERY = '&page=1&include_adult=false&primary_release_year='
+        
+        axios.get(BASE_URL + this.spaceToPlus()[0] + YEAR_QUERY + this.spaceToPlus()[1])
         .then((result) =>{
             var posterPath = result.data.results[0].poster_path
             this.setState({
