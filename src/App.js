@@ -5,6 +5,7 @@ import Navbar from './components/layouts/Navbar'
 import Home from './components/pages/Home'
 import FilmList from './components/pages/FilmList'
 import About from './components/pages/About'
+import Footer from './components/pages/Footer'
 
 export class App extends Component {
   render() {
@@ -15,6 +16,7 @@ export class App extends Component {
           <Route path="/" exact component={Home} />
           <Route path="/films" exact component={FilmList} />
           <Route path="/about" exact component={About} />
+          <Footer />  
         </div>
       </Router>
     )
