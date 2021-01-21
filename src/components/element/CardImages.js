@@ -6,7 +6,7 @@ export class CardImages extends Component {
         images: {}
     }
     spaceToPlus() {
-        const { title, release_date } = this.props.filmDetails
+        const { title, release_date } = this.props.film
         const year = release_date
         const newTitle = []
         for(var count = 0; count < title.length; count++){
@@ -36,14 +36,14 @@ export class CardImages extends Component {
         })
     }
     render() {
-        const { title } = this.props.filmDetails
+        const { title } = this.props.film
         if(title.length){
             return(
-                <div>
-                    <img src={this.state.images} alt={title} style={{ width: 300 }} className="responsive-img" />
+                <>
+                    <img src={this.state.images} alt={title} style={{ height: 500, objectFit: 'contain' }} className="responsive-img activator" />
                         <span className="card-title activator grey-text text-darken-3">
                     </span>
-                </div>
+                </>
             )
         }
     }

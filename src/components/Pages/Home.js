@@ -23,8 +23,8 @@ function Home() {
         <div className="grey-text text-darken-4">
             <Carousel />
             <hr className="container" style={{ border: '1px solid grey', borderRadius: 5, marginTop: 50 }} />
-            <div className="row">
-                <div className="col s12 center" style={{ padding: 30 }}>
+            <div className="container center">
+                <div className="row">
                     <HighRated />
                 </div>
             </div>
