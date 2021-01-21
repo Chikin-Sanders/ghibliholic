@@ -33,7 +33,7 @@ function Home() {
                 <div className="row container">
                     <div className="col s6">
                         <div className="row">
-                            <h5 className="col s12 right-align orange-text">Films</h5>
+                            <h4 className="col s12 right-align orange-text">Films</h4>
                         </div>
                         <h6 style={textStyles}>
                             Studio Ghibli is world respected studio animation. 
@@ -58,7 +58,7 @@ function Home() {
                     </div>
                     <div className="col s6">
                         <div className="row">
-                            <h5 className="col s12 left-align orange-text">About the page</h5>
+                            <h4 className="col s12 left-align orange-text">About the page</h4>
                         </div>
                         <h6 style={textStyles}>
                             The page is build in React.js and using third party API provided by ghibliapi and The Movie Database.
