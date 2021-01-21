@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class MoviesList extends Component {
+export class FilmList extends Component {
     render() {
         return (
             <div className='container'>
-                <h1>This is movie list</h1>
+                <h1>This is film list</h1>
             </div>
         )
     }
 }
 
-export default MoviesList
+export default FilmList

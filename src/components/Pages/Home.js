@@ -20,7 +20,7 @@ function Home() {
                 <br/>
                 <br/>
                 <Link to='/movies' className="hoverable waves-effect waves-light btn-large orange accent-4 grey-text text-darken-3">
-                    <h5 className="white-text">Find out other great movies</h5>
+                    <h5 className="white-text">Find out other great films</h5>
                 </Link>
             </div>
             <hr className="container" style={{ border: '1px solid grey', borderRadius: 5 }} />

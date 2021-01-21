@@ -11,7 +11,8 @@ function Navbar() {
                 <a href="/" className="brand-logo">Ghibliholic</a>
                 <ul className="right">
                     <li><NavLink to='/' onClick={() => {refreshPage()}} >Home</NavLink></li>
-                    <li><NavLink to='/movies'>Movies</NavLink></li>
+                    <li><NavLink to='/films'>Films</NavLink></li>
+                    <li><NavLink to='/about'>About</NavLink></li>
                 </ul>
             </div>
         </nav>
