@@ -6,7 +6,7 @@ function CardDetails(props) {
     return (
         <div>
             <span className="card-title grey-text text-darken-3 row" style={{padding: 15}} >
-                <h className="col s8 left valigned" style={{ fontWeight: 'bold' }}>{film.title}</h>
+                <h6 className="col s8 left valigned" style={{ fontWeight: 'bold' }}>{film.title}</h6>
                 <span className="col s4 right">
                     <i class="material-icons yellow-text text-darken-2">star</i>
                     {' '}
@@ -16,11 +16,7 @@ function CardDetails(props) {
             <hr/>
             <div className="row left-align grey-text text-darken-2" style={{ textAlign: 'justify' }}>
                 <p>Director : {film.director} </p>
-                <p>Producer : {film.producer} </p>
                 <p>Year : {film.release_date}</p>
-            </div>
-            <hr/>
-            <div className="row left-align grey-text text-darken-2" style={{ textAlign:'justify' }}>
                 <p>{film.description}</p>
             </div>
         </div>
