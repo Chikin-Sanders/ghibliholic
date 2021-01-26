@@ -13,7 +13,7 @@ export class App extends Component {
       <Router>
           <div className="App" style={{ backgroundColor: '#fbfdf2'}}>
             <Navbar />
-            <Route path="/" exact component={Home} />
+            <Route path="/ghibliholic" exact component={Home} />
             <Route path="/films" exact component={FilmList} />
             <Route path="/about" exact component={About} />
             <Footer />  
