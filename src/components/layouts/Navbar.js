@@ -4,7 +4,7 @@ import M from 'materialize-css'
 
 function Navbar() {
     function refreshPage() {
-        window.location.href='/'
+        window.location.href ='/ghibliholic/'
     }
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -17,10 +17,10 @@ function Navbar() {
         <nav className="nav-extended">
             <nav className="nav-wrapper orange accent-4">
                 <div className="container">
-                    <a href="/" className="brand-logo">Ghibliholic</a>
+                    <a href="/ghibliholic/" className="brand-logo">Ghibliholic</a>
                     <a href="/" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
-                        <li><NavLink to='/' onClick={() => {refreshPage()}} >Home</NavLink></li>
+                        <li><NavLink to='/ghibliholic/' onClick={() => {refreshPage()}} >Home</NavLink></li>
                         <li><NavLink to='/films'>Films</NavLink></li>
                         <li><NavLink to='/about'>About</NavLink></li>
                     </ul>
@@ -29,7 +29,7 @@ function Navbar() {
         </nav>
 
         <ul className="sidenav" id="mobile-demo">
-            <li><NavLink to='/' onClick={() => { refreshPage() }} >Home</NavLink></li>
+            <li><NavLink to='/ghibliholic/' onClick={() => { refreshPage() }} >Home</NavLink></li>
             <li><NavLink to='/films'>Films</NavLink></li>
             <li><NavLink to='/about'>About</NavLink></li>
         </ul>
