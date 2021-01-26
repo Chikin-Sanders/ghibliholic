@@ -14,8 +14,8 @@ export class App extends Component {
           <div className="App" style={{ backgroundColor: '#fbfdf2'}}>
             <Navbar />
             <Route path="/ghibliholic/" exact component={Home} />
-            <Route path="/films" exact component={FilmList} />
-            <Route path="/about" exact component={About} />
+            <Route path="/ghibliholic/films" exact component={FilmList} />
+            <Route path="/ghibliholic/about" exact component={About} />
             <Footer />  
           </div>
       </Router>

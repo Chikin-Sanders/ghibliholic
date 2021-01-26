@@ -41,7 +41,7 @@ function Home() {
                         </h6>
                         <br/>
                         <br/>
-                        <Link to='/films' className="hoverable right waves-effect waves-light btn-small orange accent-4 white-text">
+                        <Link to='/ghibliholic/films' className="hoverable right waves-effect waves-light btn-small orange accent-4 white-text">
                             Find out more
                         </Link>
                     </div>
@@ -65,7 +65,7 @@ function Home() {
                             I created this page to learn how to using React.js and using API from other source. I using MaterializeCSS for the UI elements.
                         </h6>
                         <br/>
-                        <Link to='/about' className="hoverable left waves-effect waves-light btn-small orange accent-4 white-text">
+                        <Link to='/ghibliholic/about' className="hoverable left waves-effect waves-light btn-small orange accent-4 white-text">
                             About
                         </Link>
                     </div>

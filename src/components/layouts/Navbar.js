@@ -21,8 +21,8 @@ function Navbar() {
                     <a href="/" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><NavLink to='/ghibliholic/' onClick={() => {refreshPage()}} >Home</NavLink></li>
-                        <li><NavLink to='/films'>Films</NavLink></li>
-                        <li><NavLink to='/about'>About</NavLink></li>
+                        <li><NavLink to='/ghibliholic/films'>Films</NavLink></li>
+                        <li><NavLink to='/ghibliholic/about'>About</NavLink></li>
                     </ul>
                 </div>
             </nav>
@@ -30,8 +30,8 @@ function Navbar() {
 
         <ul className="sidenav" id="mobile-demo">
             <li><NavLink to='/ghibliholic/' onClick={() => { refreshPage() }} >Home</NavLink></li>
-            <li><NavLink to='/films'>Films</NavLink></li>
-            <li><NavLink to='/about'>About</NavLink></li>
+            <li><NavLink to='/ghibliholic/films'>Films</NavLink></li>
+            <li><NavLink to='/ghibliholic/about'>About</NavLink></li>
         </ul>
         </div>
     )
