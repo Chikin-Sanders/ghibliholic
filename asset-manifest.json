@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ghibliholic/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/ghibliholic/static/js/main.c7dcbbb6.chunk.js",
+    "main.js.map": "/ghibliholic/static/js/main.c7dcbbb6.chunk.js.map",
+    "runtime-main.js": "/ghibliholic/static/js/runtime-main.23f4d4b0.js",
+    "runtime-main.js.map": "/ghibliholic/static/js/runtime-main.23f4d4b0.js.map",
+    "static/js/2.324f4e3a.chunk.js": "/ghibliholic/static/js/2.324f4e3a.chunk.js",
+    "static/js/2.324f4e3a.chunk.js.map": "/ghibliholic/static/js/2.324f4e3a.chunk.js.map",
+    "static/js/3.71bbcd59.chunk.js": "/ghibliholic/static/js/3.71bbcd59.chunk.js",
+    "static/js/3.71bbcd59.chunk.js.map": "/ghibliholic/static/js/3.71bbcd59.chunk.js.map",
+    "index.html": "/ghibliholic/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/ghibliholic/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.324f4e3a.chunk.js.LICENSE.txt": "/ghibliholic/static/js/2.324f4e3a.chunk.js.LICENSE.txt",
+    "static/media/radish-spirit.751fbe92.png": "/ghibliholic/static/media/radish-spirit.751fbe92.png",
+    "static/media/totoro-walking.f57da745.png": "/ghibliholic/static/media/totoro-walking.f57da745.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23f4d4b0.js",
+    "static/js/2.324f4e3a.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.c7dcbbb6.chunk.js"
+  ]
+}
