@@ -57,7 +57,7 @@ export class HighRated extends Component {
         )
         return (
             <div>
-                <h4 style={{ margin: '25px 0px 50px' }} >HIGHLY RATED MOVIES</h4>
+                <h4 style={{ margin: '25px 0px 50px' }} className="orange-text">HIGHLY RATED FILMS</h4>
                <div className="row">
                {bestFilms}
                </div>
