@@ -23,7 +23,7 @@ export class HighRated extends Component {
                 return (
                     <div className="card col l4 s12" key={film.id}>
                         <div className="card-image waves-effect waves-block waves-light" style={{ margin: '-15px -10px' }}>
-                            <CardImages film={film} />
+                            <CardImages film={film} height={500} />
                         </div>
                         <div className="card-reveal grey-text text-darken-3">
                             <span className="card-title">
