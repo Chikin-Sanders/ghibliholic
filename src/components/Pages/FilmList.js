@@ -1,50 +1,58 @@
-import React, { Component } from 'react'
+import { React, useEffect, useState }from 'react'
+import axios from 'axios'
 import FilmCards from '../element/FilmCards'
 import Pagination from '../element/Pagination'
-import axios from 'axios'
 
-export class FilmList extends Component {
-    state = {
-        posts: [],
-        loading: false,
-        currentPage: 1,
-        postsPerPage: 5
-    }
+function FilmList() {
+    const [posts, setPosts] = useState([])
+    const [loading, setLoading] = useState(false)
+    const [currentPage, setcurrentPage] = useState(1)
+    const [postPerPage] = useState(5)
 
-    componentDidMount(){
-        const fetchPosts = async () => {
-            this.setState({ loading: true })
+    useEffect(() => {
+        const fetchPosts = async() => {
+            setLoading(true)
             const res = await axios.get('https://ghibliapi.herokuapp.com/films')
-            this.setState({
-                posts: res.data,
-                loading: false
-            })
+            setPosts(res.data)
+            setLoading(false)
         }
-
         fetchPosts()
+    }, [])
+
+    // Get current Post
+    const indexOfLastPost = currentPage * postPerPage
+    const indexOfFirstPost = indexOfLastPost - postPerPage
+    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost)
+
+    //Change page
+    function paginate(pageNumber) {
+        setcurrentPage(pageNumber)
+        document.documentElement.scrollTop = 0
+    }
+    function increments(increment) {
+        setcurrentPage(currentPage + increment)
+        document.documentElement.scrollTop = 0
     }
 
-
-    render() {
-        const { loading, postsPerPage, posts } = this.state
-        var { currentPage } = this.state
-        const indexOfLastPost = currentPage * postsPerPage
-        const indexOfFirstPost = indexOfLastPost - postsPerPage
-        const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost)
-
-        function paginate(pageNumbers){
-            currentPage = pageNumbers
-            console.log(currentPage)
-        }
-
-        return (
-            <div className='container'>
-                <label htmlFor="search-bar"><h4>Find your film:</h4></label>
-                <FilmCards className="center-align" posts={currentPost} loading={loading} />
-                <Pagination totalPosts={posts.length} postsPerPage={postsPerPage} paginate={paginate} />
-            </div> 
-        )
-    }
+    return (
+        <div className="container filmlist">
+            <label htmlFor="filmcards">
+                <h4>Look for the films:</h4>
+            </label>
+            <FilmCards 
+                posts={currentPosts} 
+                loading={loading} 
+                id="filmcards" />
+            <Pagination
+                loading={loading}
+                totalPosts={posts.length}
+                postPerPage={postPerPage}
+                paginate={paginate}
+                currentPage={currentPage}
+                increments={increments} />
+        </div>
+    )
 }
+
 
 export default FilmList
