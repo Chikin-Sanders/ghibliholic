@@ -1,4 +1,5 @@
 import React from 'react'
+import CardImages from './CardImages'
 
 function FilmCards({ posts, loading}) {
     if (loading){
@@ -25,10 +26,14 @@ function FilmCards({ posts, loading}) {
                 {
                     posts.map(post => {
                         return(
-                            <div className="card" key={post.id}>
-                                <div className="card-content">
-                                    <span className="card-title">{post.title}</span>
+                            <div className="card row" key={post.id} style={{padding: '15px 0'}}>
+                                <div className="col s3 offset-s1">
+                                    <CardImages film={post} height={300} />
+                                </div>
+                                <div className="card-content col s8" style={{textAlign: 'justify'}}>
+                                    <span className="card-title"><h4>{post.title}</h4></span>
                                     <hr />
+                                    <p style={{ fontStyle: 'italic' }}>release year: {post.release_date}</p>
                                     <p>{post.description}</p>
                                 </div>
                             </div>
