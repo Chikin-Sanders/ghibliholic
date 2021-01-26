@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Navbar from './components/layouts/Navbar'
 import Home from './components/pages/Home'
@@ -11,7 +11,6 @@ export class App extends Component {
   render() {
     return (
       <Router>
-          <Switch>
           <div className="App" style={{ backgroundColor: '#fbfdf2'}}>
             <Navbar />
             <Route path="/" exact component={Home} />
@@ -19,7 +18,6 @@ export class App extends Component {
             <Route path="/about" exact component={About} />
             <Footer />  
           </div>
-        </Switch>
       </Router>
     )
   }
