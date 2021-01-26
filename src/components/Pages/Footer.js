@@ -3,10 +3,10 @@ import React, { Component } from 'react'
 class Footer extends Component {
     state = {
         resources: [
-            { web: 'MaterializeCSS', src: 'https://materializecss.com/'},
-            { web: 'Ghibli API', src: 'https://ghibliapi.herokuapp.com/'},
-            { web: 'The Movie Database', src: 'https://www.themoviedb.org/'},
-            { web: 'React.js', src: 'https://reactjs.org/'},
+            { id: 1, web: 'MaterializeCSS', src: 'https://materializecss.com/'},
+            { id: 2, web: 'Ghibli API', src: 'https://ghibliapi.herokuapp.com/'},
+            { id: 3, web: 'The Movie Database', src: 'https://www.themoviedb.org/'},
+            { id: 4, web: 'React.js', src: 'https://reactjs.org/'},
         ]
     }
     render() {
@@ -19,7 +19,13 @@ class Footer extends Component {
                 {
                     this.state.resources.map(resource => {
                         return(
-                            <a href={resource.src} target="_blank" rel="noreferrer noopener" className={linkStyles}>
+                            <a 
+                            href={resource.src}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className={linkStyles}
+                            key={resource.id}
+                            >
                                 <h6>{resource.web}</h6>
                             </a>
                         )
