@@ -18,7 +18,7 @@ function Navbar() {
             <nav className="nav-wrapper orange accent-4">
                 <div className="container">
                     <a href="/" className="brand-logo">Ghibliholic</a>
-                    <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="/" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><NavLink to='/' onClick={() => {refreshPage()}} >Home</NavLink></li>
                         <li><NavLink to='/films'>Films</NavLink></li>

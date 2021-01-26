@@ -21,21 +21,21 @@ export class HighRated extends Component {
         const bestFilms = bestFilmsList.length ? (
             bestFilmsList.map(film => {
                 return (
-                    <div className="card col l4 s12">
+                    <div className="card col l4 s12" key={film.id}>
                         <div className="card-image waves-effect waves-block waves-light" style={{ margin: '-15px -10px' }}>
                             <CardImages film={film} />
                         </div>
                         <div className="card-reveal grey-text text-darken-3">
                             <span className="card-title">
                                 <h5 className="col s10 left-align">{film.title}</h5>
-                                <i class="material-icons col s2 right-align">close</i>
+                                <i className="material-icons col s2 right-align">close</i>
                             </span>
                             <div className="row left" style={{ textAlign: 'justify' }}>
                                 <br/>
                                 <p>Director : {film.director} </p>
                                 <p>Producer : {film.producer} </p>
                                 <p>Year : {film.release_date}</p>
-                                <p>Rating : <span><i class="material-icons yellow-text text-darken-2">star</i></span>{film.rt_score}</p>
+                                <p>Rating : <span><i className="material-icons yellow-text text-darken-2">star</i></span>{film.rt_score}</p>
                                 <p>{film.description}</p>
                             </div>
                         </div>
