@@ -25,7 +25,7 @@ function FilmCards({ posts, loading}) {
                 {
                     posts.map(post => {
                         return(
-                            <div className="card">
+                            <div className="card" key={post.id}>
                                 <div className="card-content">
                                     <span className="card-title">{post.title}</span>
                                     <hr />
