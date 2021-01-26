@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.filmlist > .pagination > .active{
+  background-color: #ff6d00 !important;
+}
