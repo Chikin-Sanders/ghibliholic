@@ -1,4 +1,4 @@
-import { React, useEffect, useState }from 'react'
+import { React, useEffect, useState } from 'react'
 import axios from 'axios'
 import FilmCards from '../element/FilmCards'
 import Pagination from '../element/Pagination'
