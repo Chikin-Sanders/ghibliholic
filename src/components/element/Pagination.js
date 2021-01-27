@@ -14,7 +14,7 @@ function Pagination({ loading, totalPosts, postPerPage, paginate, currentPage, i
             <li 
                 className={currentPage === pageNumbers[0] ? 'hide' : 'hoverable' } 
                 onClick={() => increments(-1)} >
-                <a href="#!"><i class="material-icons">chevron_left</i></a>
+                <a href="#!"><i className="material-icons">chevron_left</i></a>
             </li>
             {pageNumbers.map(number => {
                 return(
@@ -31,7 +31,7 @@ function Pagination({ loading, totalPosts, postPerPage, paginate, currentPage, i
             <li  
                 className={currentPage === pageNumbers[pageNumbers.length - 1] ? 'hide' : 'hoverable'} 
                 onClick={() => increments(1)} >
-                <a href="#!"><i class="material-icons">chevron_right</i></a>
+                <a href="#!"><i className="material-icons">chevron_right</i></a>
             </li>
         </ul>
     )
