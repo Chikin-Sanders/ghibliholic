@@ -21,7 +21,7 @@ export class HighRated extends Component {
         const bestFilms = bestFilmsList.length ? (
             bestFilmsList.map(film => {
                 return (
-                    <div className="card col l4 s12" key={film.id}>
+                    <div className="card col l4 s12" key={film.id} style={{}}>
                         <div className="card-image waves-effect waves-block waves-light" style={{ margin: '-15px -10px' }}>
                             <CardImages film={film} height={500} />
                         </div>
