@@ -6,6 +6,7 @@ import Home from './components/pages/Home'
 import FilmList from './components/pages/FilmList'
 import About from './components/pages/About'
 import Footer from './components/pages/Footer'
+import FilmDetails from './components/pages/FilmDetails'
 
 export class App extends Component {
   render() {
@@ -15,7 +16,8 @@ export class App extends Component {
             <Navbar />
             <Route path="/ghibliholic/" exact component={Home} />
             <Route path="/ghibliholic/films" exact component={FilmList} />
-            <Route path="/ghibliholic/about" exact component={About} />
+            <Route path="/ghibliholic/about" component={About} />
+            <Route path="/ghibliholic/films/id/:film_id" component={FilmDetails} />
             <Footer />  
           </div>
       </Router>
