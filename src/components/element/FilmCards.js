@@ -35,6 +35,7 @@ function FilmCards({ posts, loading}) {
                                     <hr />
                                     <p style={{ fontStyle: 'italic' }}>release year: {post.release_date}</p>
                                     <p>{post.description}</p>
+                                    <a href={'/ghibliholic/films/id/' + post.id}>read more &raquo;</a>
                                 </div>
                             </div>
                             )
