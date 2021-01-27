@@ -31,7 +31,7 @@ function Home() {
             <hr className="container" style={ breakStyle } />
             <div className="center" style={divStyles}>
                 <div className="row container">
-                    <div className="col s6">
+                    <div className="col s12 l8">
                         <div className="row">
                             <h4 className="col s12 right-align orange-text">Films</h4>
                         </div>
@@ -45,7 +45,7 @@ function Home() {
                             Find out more
                         </Link>
                     </div>
-                    <div className="col s6" >
+                    <div className="col s12 l4" >
                         <img src={Totoro} alt="totoro" height="250"/>
                     </div>
                 </div>
@@ -53,11 +53,11 @@ function Home() {
             <hr className="container" style={ breakStyle } />
             <div className="center" style={divStyles}>
                 <div className="row container">
-                    <div className="col s6">
+                    <div className="col s12 l4">
                         <img src={RadishSpirit} alt="radish-spirit" height='250'/>
                     </div>
-                    <div className="col s6" >
-                        <div className="row" style={{ overflow: 'hidden' }}>
+                    <div className="col s12 l8" >
+                        <div className="row">
                             <h4 className="col s12 left-align orange-text">About the page</h4>
                         </div>
                         <h6 style={textStyles}>
