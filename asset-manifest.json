@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ghibliholic/static/css/main.d44d304a.chunk.css",
-    "main.js": "/ghibliholic/static/js/main.6089466f.chunk.js",
-    "main.js.map": "/ghibliholic/static/js/main.6089466f.chunk.js.map",
+    "main.js": "/ghibliholic/static/js/main.8ddd1d5d.chunk.js",
+    "main.js.map": "/ghibliholic/static/js/main.8ddd1d5d.chunk.js.map",
     "runtime-main.js": "/ghibliholic/static/js/runtime-main.209539fa.js",
     "runtime-main.js.map": "/ghibliholic/static/js/runtime-main.209539fa.js.map",
     "static/js/2.e397d34a.chunk.js": "/ghibliholic/static/js/2.e397d34a.chunk.js",
@@ -12,13 +12,16 @@
     "index.html": "/ghibliholic/index.html",
     "static/css/main.d44d304a.chunk.css.map": "/ghibliholic/static/css/main.d44d304a.chunk.css.map",
     "static/js/2.e397d34a.chunk.js.LICENSE.txt": "/ghibliholic/static/js/2.e397d34a.chunk.js.LICENSE.txt",
+    "static/media/kaonashi.7ae4fbd1.png": "/ghibliholic/static/media/kaonashi.7ae4fbd1.png",
+    "static/media/materializecss.10537047.svg": "/ghibliholic/static/media/materializecss.10537047.svg",
     "static/media/radish-spirit.751fbe92.png": "/ghibliholic/static/media/radish-spirit.751fbe92.png",
-    "static/media/totoro-walking.f57da745.png": "/ghibliholic/static/media/totoro-walking.f57da745.png"
+    "static/media/tmdb.bb8aa703.svg": "/ghibliholic/static/media/tmdb.bb8aa703.svg",
+    "static/media/totoro.f1dac35c.png": "/ghibliholic/static/media/totoro.f1dac35c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.209539fa.js",
     "static/js/2.e397d34a.chunk.js",
     "static/css/main.d44d304a.chunk.css",
-    "static/js/main.6089466f.chunk.js"
+    "static/js/main.8ddd1d5d.chunk.js"
   ]
 }
