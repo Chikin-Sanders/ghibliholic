@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Carousel from '../layouts/Carousel'
 import HighRated from './HighRated'
-import Totoro from '../images/totoro-walking.png'
+import Totoro from '../images/totoro.png'
 import RadishSpirit from '../images/radish-spirit.png'
 
 const breakStyle = {
