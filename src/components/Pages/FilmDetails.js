@@ -16,12 +16,29 @@ function FilmDetails(props) {
     
     if(filmData.length !== 0) {
         return (
-            <div style={{ backgroundImage: 'https://www.denofgeek.com/wp-content/uploads/2018/04/grave-main.jpg?resize=768%2C432'}}>
+            <div>
                 <div className="container center">
-                    <a className="waves-effect waves-orange btn-flat left" href="/ghibliholic/films/" >
+                    <div className="row">
+                    <a className="waves-effect btn-flat left" href="/ghibliholic/films/" >
                         <i className="material-icons">keyboard_arrow_left</i>
                     </a>
-                    <CardImages film={filmData} height={500} />
+                    </div>
+                    <div className="row">
+                        <div className="col s12 l4">
+                        <CardImages film={filmData} height={500} />
+                        </div>
+                        <div className="col s12 offset-l1 l7 left-align description">
+                            <h2>{filmData.title}</h2>
+                            <hr/>
+                            <p>director &emsp; &emsp;: {filmData.director}</p>
+                            <p>producer&emsp;&emsp;: {filmData.producer}</p>
+                            <p>release&emsp;&emsp;&emsp;: {filmData.release_date}</p>
+                            <p>rating &emsp;&emsp;&emsp; : <i class="material-icons yellow-text text-darken2">star_border</i>{filmData.rt_score}</p>
+                            <hr/>
+                            <p>description &emsp;:</p>
+                            <p style={{textAlign: 'justify'}}>{filmData.description}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
@@ -29,7 +46,7 @@ function FilmDetails(props) {
         return(
             <div>
                 <div className="center valigned" >
-                    <h2>loading</h2>
+                    <h4>loading</h4>
                     <div className="preloader-wrapper big active">
                         <div className="spinner-layer spinner-blue">
                             <div className="circle-clipper left">
