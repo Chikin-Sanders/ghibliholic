@@ -33,7 +33,7 @@ function FilmDetails(props) {
                             <p>director &emsp; &emsp;: {filmData.director}</p>
                             <p>producer&emsp;&emsp;: {filmData.producer}</p>
                             <p>release&emsp;&emsp;&emsp;: {filmData.release_date}</p>
-                            <p>rating &emsp;&emsp;&emsp; : <i class="material-icons yellow-text text-darken2">star_border</i>{filmData.rt_score}</p>
+                            <p>rating &emsp;&emsp;&emsp; : <i class="material-icons yellow-text text-darken2">star</i>{filmData.rt_score}</p>
                             <hr/>
                             <p>description &emsp;:</p>
                             <p style={{textAlign: 'justify'}}>{filmData.description}</p>
