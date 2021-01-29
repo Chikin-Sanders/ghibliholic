@@ -1,8 +1,9 @@
 import React, { useEffect, useState} from 'react'
 import axios from 'axios'
 import CardImages from '../element/CardImages'
+import { Link } from 'react-router-dom'
 
-function FilmDetails({props}) {
+function FilmDetails(props) {
     const [id] = useState(props.match.params.film_id)
     const [filmData, setFilmData] = useState([])
 
@@ -19,9 +20,9 @@ function FilmDetails({props}) {
             <div>
                 <div className="container center">
                     <div className="row">
-                    <a className="waves-effect btn-flat left" href="/ghibliholic/films/" >
+                    <Link className="waves-effect btn-flat left" to="/ghibliholic/films/" >
                         <i className="material-icons">keyboard_arrow_left</i>
-                    </a>
+                    </Link>
                     </div>
                     <div className="row">
                         <div className="col s12 l4">

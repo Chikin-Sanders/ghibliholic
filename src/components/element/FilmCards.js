@@ -1,5 +1,6 @@
 import React from 'react'
 import CardImages from './CardImages'
+import {Link} from 'react-router-dom'
 
 function FilmCards({ posts, loading}) {
     if (loading){
@@ -35,7 +36,7 @@ function FilmCards({ posts, loading}) {
                                     <hr />
                                     <p style={{ fontStyle: 'italic' }}>release year: {post.release_date}</p>
                                     <p>{post.description}</p>
-                                    <a href={'/ghibliholic/films/id/' + post.id}>read more &raquo;</a>
+                                    <Link to={'/ghibliholic/films/id/' + post.id}>read more &raquo;</Link>
                                 </div>
                             </div>
                             )
