@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ghibliholic/static/css/main.d44d304a.chunk.css",
-    "main.js": "/ghibliholic/static/js/main.8ddd1d5d.chunk.js",
-    "main.js.map": "/ghibliholic/static/js/main.8ddd1d5d.chunk.js.map",
+    "main.js": "/ghibliholic/static/js/main.05fa4ae1.chunk.js",
+    "main.js.map": "/ghibliholic/static/js/main.05fa4ae1.chunk.js.map",
     "runtime-main.js": "/ghibliholic/static/js/runtime-main.209539fa.js",
     "runtime-main.js.map": "/ghibliholic/static/js/runtime-main.209539fa.js.map",
-    "static/js/2.e397d34a.chunk.js": "/ghibliholic/static/js/2.e397d34a.chunk.js",
-    "static/js/2.e397d34a.chunk.js.map": "/ghibliholic/static/js/2.e397d34a.chunk.js.map",
+    "static/js/2.e4964654.chunk.js": "/ghibliholic/static/js/2.e4964654.chunk.js",
+    "static/js/2.e4964654.chunk.js.map": "/ghibliholic/static/js/2.e4964654.chunk.js.map",
     "static/js/3.5c08fea6.chunk.js": "/ghibliholic/static/js/3.5c08fea6.chunk.js",
     "static/js/3.5c08fea6.chunk.js.map": "/ghibliholic/static/js/3.5c08fea6.chunk.js.map",
     "index.html": "/ghibliholic/index.html",
     "static/css/main.d44d304a.chunk.css.map": "/ghibliholic/static/css/main.d44d304a.chunk.css.map",
-    "static/js/2.e397d34a.chunk.js.LICENSE.txt": "/ghibliholic/static/js/2.e397d34a.chunk.js.LICENSE.txt",
+    "static/js/2.e4964654.chunk.js.LICENSE.txt": "/ghibliholic/static/js/2.e4964654.chunk.js.LICENSE.txt",
     "static/media/kaonashi.7ae4fbd1.png": "/ghibliholic/static/media/kaonashi.7ae4fbd1.png",
     "static/media/materializecss.10537047.svg": "/ghibliholic/static/media/materializecss.10537047.svg",
     "static/media/radish-spirit.751fbe92.png": "/ghibliholic/static/media/radish-spirit.751fbe92.png",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.209539fa.js",
-    "static/js/2.e397d34a.chunk.js",
+    "static/js/2.e4964654.chunk.js",
     "static/css/main.d44d304a.chunk.css",
-    "static/js/main.8ddd1d5d.chunk.js"
+    "static/js/main.05fa4ae1.chunk.js"
   ]
 }
