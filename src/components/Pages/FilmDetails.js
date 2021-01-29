@@ -2,7 +2,7 @@ import React, { useEffect, useState} from 'react'
 import axios from 'axios'
 import CardImages from '../element/CardImages'
 
-function FilmDetails(props) {
+function FilmDetails({props}) {
     const [id] = useState(props.match.params.film_id)
     const [filmData, setFilmData] = useState([])
 
